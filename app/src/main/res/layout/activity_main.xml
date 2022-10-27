@@ -24,7 +24,8 @@
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guideL"
-        app:layout_constraintTop_toBottomOf="@id/taco">
+        app:layout_constraintTop_toBottomOf="@id/taco"
+        app:startIconDrawable="@drawable/ic_persona">
 
         <EditText
             android:id="@+id/edituser"
@@ -45,7 +46,8 @@
         app:layout_constraintTop_toBottomOf="@id/tilusername"
         app:layout_constraintStart_toStartOf="@id/guideL"
         app:layout_constraintEnd_toEndOf="@id/guideR"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_candado">
 
         <EditText
             android:id="@+id/editpassword"
