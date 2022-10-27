@@ -23,9 +23,9 @@
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:text="Username"
-        app:layout_constraintEnd_toEndOf="@id/cancel"
+        app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintStart_toStartOf="@id/guideL"
         android:padding="8dp"
         app:layout_constraintTop_toBottomOf="@id/taco"/>
 
@@ -38,27 +38,38 @@
         android:layout_marginTop="8dp"
         android:padding="8dp"
         app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintStart_toStartOf="@id/login"
-        app:layout_constraintEnd_toEndOf="@id/cancel" />
+        app:layout_constraintStart_toStartOf="@id/guideL"
+        app:layout_constraintEnd_toEndOf="@id/guideR" />
 
     <Button
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
-        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"/>
+        app:layout_constraintStart_toStartOf="@id/guideL"/>
 
     <Button
         android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cancel"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintStart_toEndOf="@id/login"
+        app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintTop_toTopOf="@id/login"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
