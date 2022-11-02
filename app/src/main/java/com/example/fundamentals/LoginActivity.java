@@ -3,11 +3,10 @@ package com.example.fundamentals;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     Button cancel;
     EditText edituser,editpassword;
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         editpassword=findViewById(R.id.editpassword);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
     }
 }
