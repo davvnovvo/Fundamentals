@@ -42,11 +42,33 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilpassword"
+        android:id="@+id/tilemail"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/tilusername"
+        app:layout_constraintEnd_toEndOf="@id/guideR"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/guideL"
+        app:startIconDrawable="@drawable/email">
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:imeOptions="actionGo"
+            android:inputType="textEmailAddress">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilpassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tilemail"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guideL"
@@ -65,7 +87,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilemail"
+        android:id="@+id/tilpassword2"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -73,15 +95,16 @@
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guideL"
-        app:startIconDrawable="@drawable/email">
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_candado">
 
         <EditText
-            android:id="@+id/editemail"
+            android:id="@+id/editpassword2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="Confirm password"
             android:imeOptions="actionGo"
-            android:inputType="textEmailAddress">
+            android:inputType="textPassword">
         </EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -89,7 +112,7 @@
     <Button
         android:id="@+id/login"
         android:text="LOGIN"
-        app:layout_constraintTop_toBottomOf="@id/tilemail"
+        app:layout_constraintTop_toBottomOf="@id/tilpassword2"
         app:layout_constraintStart_toStartOf="@id/guideL"
         style="@style/login_button" />
 
