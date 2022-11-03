@@ -67,7 +67,8 @@
         android:id="@+id/cancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="CANCEL"
+        android:backgroundTint="@color/buttonselector"
+        android:text="CLEAR"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintTop_toTopOf="@id/login" />
