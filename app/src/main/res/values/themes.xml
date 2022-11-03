@@ -16,6 +16,6 @@
 
     <style name="MyTheme" parent="Theme.Fundamentals" />
 
-    <style name="MyTheme.NoActionBar" />
+    <style name="MyTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
 
 </resources>
