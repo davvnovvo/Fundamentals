@@ -61,7 +61,8 @@
         android:backgroundTint="@color/buttonselector"
         android:text="LOGIN"
         app:layout_constraintStart_toStartOf="@id/guideL"
-        app:layout_constraintTop_toBottomOf="@id/tilpassword" />
+        app:layout_constraintTop_toBottomOf="@id/tilpassword"
+        app:layout_constraintEnd_toEndOf="@id/guideL2"/>
 
     <Button
         android:id="@+id/cancel"
@@ -70,6 +71,7 @@
         android:backgroundTint="@color/buttonselector"
         android:text="CLEAR"
         android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/guideR2"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintTop_toTopOf="@id/login" />
 
@@ -91,10 +93,24 @@
         app:layout_constraintGuide_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideL2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideR"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideR2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
