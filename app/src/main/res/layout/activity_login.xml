@@ -58,6 +58,7 @@
     <Button
         android:id="@+id/login"
         style="@style/login_button"
+        android:backgroundTint="@color/buttonselector"
         android:text="LOGIN"
         app:layout_constraintStart_toStartOf="@id/guideL"
         app:layout_constraintTop_toBottomOf="@id/tilpassword" />
@@ -71,14 +72,15 @@
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintTop_toTopOf="@id/login" />
 
-    <Button
+    <TextView
         android:id="@+id/signup"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@id/cancel"
-        app:layout_constraintStart_toEndOf="@id/login"
+        android:layout_marginTop="15dp"
+        android:onClick="openSignup"
+        android:text="Have you got an account? Sign up here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login" />
 
     <androidx.constraintlayout.widget.Guideline
