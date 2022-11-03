@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class SignupActivity extends AppCompatActivity {
 
-   EditText edituser, editpassword, editemail;
+    EditText edituser, editpassword, editemail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

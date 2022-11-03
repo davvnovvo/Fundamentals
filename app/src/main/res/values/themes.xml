@@ -14,8 +14,8 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="MyTheme" parent="Theme.Fundamentals"/>
+    <style name="MyTheme" parent="Theme.Fundamentals" />
 
-    <style name="MyTheme.NoActionBar"/>
+    <style name="MyTheme.NoActionBar" />
 
 </resources>

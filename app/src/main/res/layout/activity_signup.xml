@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@color/crema">
+    android:background="@color/crema"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/datos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Datos"
-        android:textSize="35dp"
-        android:textColor="@color/black"
         android:layout_marginTop="100dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="Datos"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilusername"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
-        app:layout_constraintTop_toBottomOf="@id/datos"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guideL"
+        app:layout_constraintTop_toBottomOf="@id/datos"
         app:startIconDrawable="@drawable/ic_persona">
 
         <EditText
@@ -36,8 +35,7 @@
             android:layout_height="wrap_content"
             android:hint="Username"
             android:imeOptions="actionGo"
-            android:inputType="text">
-        </EditText>
+            android:inputType="text"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,10 +44,10 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/tilusername"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guideL"
+        app:layout_constraintTop_toBottomOf="@id/tilusername"
         app:startIconDrawable="@drawable/email">
 
         <EditText
@@ -58,8 +56,7 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:imeOptions="actionGo"
-            android:inputType="textEmailAddress">
-        </EditText>
+            android:inputType="textEmailAddress"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,10 +65,10 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/tilemail"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guideL"
+        app:layout_constraintTop_toBottomOf="@id/tilemail"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_candado">
 
@@ -81,8 +78,7 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             android:imeOptions="actionGo"
-            android:inputType="textPassword">
-        </EditText>
+            android:inputType="textPassword"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,10 +87,10 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/tilpassword"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guideL"
+        app:layout_constraintTop_toBottomOf="@id/tilpassword"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_candado">
 
@@ -104,18 +100,17 @@
             android:layout_height="wrap_content"
             android:hint="Confirm password"
             android:imeOptions="actionGo"
-            android:inputType="textPassword">
-        </EditText>
+            android:inputType="textPassword"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login"
+        style="@style/login_button"
         android:text="LOGIN"
-        app:layout_constraintTop_toBottomOf="@id/tilpassword2"
         app:layout_constraintEnd_toEndOf="@id/guideL2"
         app:layout_constraintStart_toStartOf="@id/guideL"
-        style="@style/login_button" />
+        app:layout_constraintTop_toBottomOf="@id/tilpassword2" />
 
     <Button
         android:id="@+id/cancel"
@@ -123,8 +118,8 @@
         android:layout_height="wrap_content"
         android:text="CANCEL"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@id/guideR2"
         app:layout_constraintEnd_toEndOf="@id/guideR"
+        app:layout_constraintStart_toStartOf="@id/guideR2"
         app:layout_constraintTop_toTopOf="@id/login" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -132,27 +127,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2"/>
+        app:layout_constraintGuide_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideL2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.48"/>
+        app:layout_constraintGuide_percent="0.48" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideR"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8"/>
+        app:layout_constraintGuide_percent="0.8" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideR2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.52"/>
+        app:layout_constraintGuide_percent="0.52" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
