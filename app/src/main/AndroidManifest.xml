@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Fundamentals"
         tools:targetApi="31">
         <activity
-            android:name=".SignupActivity"
+            android:name="com.dnovo.first.SignupActivity"
             android:exported="false"
             android:theme="@style/MyTheme.NoActionBar">
             <meta-data
@@ -23,7 +23,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.dnovo.first.LoginActivity"
             android:exported="true"
             android:theme="@style/MyTheme.NoActionBar">
             <intent-filter>
