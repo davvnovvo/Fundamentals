@@ -78,7 +78,6 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/buttonselector"
         android:text="CLEAR"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintStart_toStartOf="@id/guideR2"
         app:layout_constraintTop_toTopOf="@id/login" />
