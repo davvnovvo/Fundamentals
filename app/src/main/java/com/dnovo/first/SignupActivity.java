@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.fundamentals.R;
+
 public class SignupActivity extends AppCompatActivity {
 
     EditText edituser, editpassword, editpassword2, editemail;
