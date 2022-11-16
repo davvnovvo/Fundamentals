@@ -1,14 +1,19 @@
 package com.dnovo.first;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.example.fundamentals.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -16,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView signup;
     Button cancel;
     EditText edituser, editpassword;
-    ImageView mFondo;
+    ImageView mFondo, bandera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +34,15 @@ public class LoginActivity extends AppCompatActivity {
         edituser = findViewById(R.id.edituser);
         editpassword = findViewById(R.id.editpassword);
         mFondo = findViewById(R.id.fondo);
+        bandera = findViewById(R.id.bandera);
+
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        bandera.startAnimation(myanim);
 
         Glide.with(this)
-                .load("https://i.pinimg.com/736x/4c/30/34/4c3034861b40f0fb4c0b3b5fbefe77e9.jpg")
+                .load("https://img.freepik.com/fotos-premium/fondo-mexicano-copyspace_1101-1416.jpg?w=2000")
+                .transition(DrawableTransitionOptions.withCrossFade(100))
+                .centerCrop()
                 .into(mFondo);
 
         /*Glide.with(this)

@@ -6,6 +6,12 @@
     android:background="@color/crema"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart" />
+
     <TextView
         android:id="@+id/datos"
         android:layout_width="wrap_content"
