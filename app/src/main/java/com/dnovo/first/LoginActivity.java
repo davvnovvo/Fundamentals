@@ -39,6 +39,9 @@ public class LoginActivity extends AppCompatActivity {
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.fadein);
         bandera.startAnimation(myanim);
 
+        Animation rotation = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        bandera.startAnimation(rotation);
+
         Glide.with(this)
                 .load("https://img.freepik.com/fotos-premium/fondo-mexicano-copyspace_1101-1416.jpg?w=2000")
                 .transition(DrawableTransitionOptions.withCrossFade(100))
