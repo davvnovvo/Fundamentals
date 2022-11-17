@@ -30,10 +30,10 @@
         <activity
             android:name="com.dnovo.first.SignupActivity"
             android:exported="false"
-            android:theme="@style/MyTheme.NoActionBar">
+            android:parentActivityName="com.dnovo.first.LoginActivity">
             <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dnovo.first.LoginActivity" />
         </activity>
         <activity
             android:name="com.dnovo.first.LoginActivity"
