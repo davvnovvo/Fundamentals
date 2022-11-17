@@ -39,7 +39,7 @@ public class Splash extends AppCompatActivity {
         Glide.with(this)
 //                .load("https://img.freepik.com/vector-gratis/fondo-maravilloso-psicodelico-dibujado-mano-plana_23-2148850121.jpg?w=2000")
                 .load(R.drawable.fondo2)
-                .transition(DrawableTransitionOptions.withCrossFade(200))
+                .transition(DrawableTransitionOptions.withCrossFade(100))
                 .centerCrop()
 //                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
