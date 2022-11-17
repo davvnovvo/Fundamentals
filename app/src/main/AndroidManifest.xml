@@ -17,6 +17,7 @@
         <activity
             android:name="com.dnovo.first.Splash"
             android:exported="true"
+            android:noHistory="true"
             android:theme="@style/MyTheme.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
