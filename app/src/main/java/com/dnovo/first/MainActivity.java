@@ -17,28 +17,16 @@ import com.example.fundamentals.R;
 public class MainActivity extends AppCompatActivity {
 
     private WebView miVisorWeb;
-    //private SwipeRefreshLayout swipeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // casting a la vista a la que aplicamos un menu contextual
-        // y la registramos
         WebView mycontext = (WebView) findViewById(R.id.click);
         registerForContextMenu(mycontext);
 
-
-        // DENTRO del Oncreate
-        // cast al Layout SwipeRefresh con el que rodeamos la vista
-        // en el xml y le colocamos un listener
-        //swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
-        //swipeLayout.setOnRefreshListener(mOnRefreshListener);
-
-        //La vista dentro es un webview con permiso para zoom
         miVisorWeb = (WebView) findViewById(R.id.click);
-        //  miVisorWeb.getSettings().setJavaScriptEnabled(true);
         miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
