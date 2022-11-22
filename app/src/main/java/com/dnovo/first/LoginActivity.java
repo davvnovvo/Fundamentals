@@ -19,7 +19,7 @@ import com.example.fundamentals.R;
 public class LoginActivity extends AppCompatActivity {
 
     TextView signup;
-    Button cancel;
+    Button cancel, login;
     EditText edituser, editpassword;
     ImageView mFondo, bandera;
 
@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
 
         signup = findViewById(R.id.signup);
         cancel = findViewById(R.id.cancel);
+        login = findViewById(R.id.login);
         edituser = findViewById(R.id.edituser);
         editpassword = findViewById(R.id.editpassword);
         mFondo = findViewById(R.id.fondo);
@@ -56,6 +57,14 @@ public class LoginActivity extends AppCompatActivity {
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.orange)))
                 .circleCrop()
                 .into(mFondo);*/
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

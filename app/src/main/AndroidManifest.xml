@@ -15,6 +15,13 @@
         android:theme="@style/Theme.Fundamentals"
         tools:targetApi="31">
         <activity
+            android:name="com.dnovo.first.MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dnovo.first.LoginActivity" />
+        </activity>
+        <activity
             android:name="com.dnovo.first.Splash"
             android:exported="true"
             android:noHistory="true"
@@ -22,6 +29,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
