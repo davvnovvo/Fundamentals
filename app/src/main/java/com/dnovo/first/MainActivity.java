@@ -3,16 +3,20 @@ package com.dnovo.first;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.app.AlertDialog;
 
-import android.annotation.SuppressLint;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.example.fundamentals.R;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -43,11 +47,49 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_context, menu);
     }
 
+    public void showAlertDialogButtonClicked(MainActivity mainActivity) {
+
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.aguila);
+        builder.setCancelable(false);
+
+        builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(intent);
+                dialog.dismiss();
+
+            }
+        });
+
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast toast0 = Toast.makeText(MainActivity.this, "Like a fish", Toast.LENGTH_LONG);
+                toast0.show();
+            }
+        });
+
+        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+
     protected SwipeRefreshLayout.OnRefreshListener
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
         @Override
         public void onRefresh() {
-
 
             Toast toast0 = Toast.makeText(MainActivity.this, "Hi there! I don't exist :)", Toast.LENGTH_LONG);
             toast0.show();
@@ -91,5 +133,46 @@ public class MainActivity extends AppCompatActivity {
                 return super.onContextItemSelected(item);
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_appbar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.item1) {
+
+            showAlertDialogButtonClicked(MainActivity.this);
+
+            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
+            toast.show();
+
+        }
+        if (id == R.id.item2) {
+            Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
+            toast.show();
+        }
+
+        if (id == R.id.item3) {
+            Intent intent = new Intent(MainActivity.this, Splash.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.item4) {
+            Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.item5) {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
