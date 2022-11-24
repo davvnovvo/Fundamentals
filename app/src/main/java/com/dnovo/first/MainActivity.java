@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
 
-        builder.setTitle("Achtung!");
-        builder.setMessage("Where do you go?");
+        builder.setTitle("Menu");
+        builder.setMessage("Where do you go baby?");
         builder.setIcon(R.drawable.aguila);
         builder.setCancelable(false);
 
@@ -69,17 +69,17 @@ public class MainActivity extends AppCompatActivity {
         builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast toast0 = Toast.makeText(MainActivity.this, "Like a fish", Toast.LENGTH_LONG);
+                Toast toast0 = Toast.makeText(MainActivity.this, "Hello i do nothing", Toast.LENGTH_LONG);
                 toast0.show();
             }
         });
 
-        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+        /*builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
             }
-        });
+        });*/
 
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -146,12 +146,10 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.item1) {
-
             showAlertDialogButtonClicked(MainActivity.this);
 
             Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
             toast.show();
-
         }
         if (id == R.id.item2) {
             Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
