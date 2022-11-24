@@ -74,12 +74,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton("Exit", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                System.exit(0);
                 dialog.dismiss();
             }
-        });*/
+        });
 
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -167,8 +168,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.item5) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            startActivity(intent);
+            System.exit(0);
         }
 
         return super.onOptionsItemSelected(item);
