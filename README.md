@@ -26,13 +26,13 @@
 
 [Rotate](https://github.com/davvnovvo/First/blob/master/app/src/main/res/anim/rotate.xml)
 
-# Each of the logins
+# Activity.xml --> Logins
 
 [ActivityLogin](https://github.com/davvnovvo/First/blob/master/app/src/main/res/layout/activity_login.xml)
 
 [ActivityLogin(Land)](https://github.com/davvnovvo/First/blob/master/app/src/main/res/layout-land/activity_login.xml)
 
-# All of the activity.xml
+# Rest of activity.xml
 
 [ActivityMain](https://github.com/davvnovvo/First/blob/master/app/src/main/res/layout/activity_main.xml)
 
