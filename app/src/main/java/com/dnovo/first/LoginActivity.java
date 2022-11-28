@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -61,8 +62,16 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(i);
+
+                if (!edituser.getText().toString().equals("") && !editpassword.getText().toString().equals("")) {
+                    Toast.makeText(LoginActivity.this, "INICIO DE SESIÓN CORRECTO", Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(i);
+                    limpiar();
+                } else {
+                    Toast.makeText(LoginActivity.this, "DEBE COMPLETAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 
@@ -80,12 +89,15 @@ public class LoginActivity extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                edituser.setText("");
-                editpassword.setText("");
-
+                limpiar();
             }
         });
 
     }
+
+    private void limpiar() {
+        edituser.setText("");
+        editpassword.setText("");
+    }
+
 }
