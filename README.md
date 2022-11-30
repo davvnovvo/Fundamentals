@@ -14,7 +14,7 @@
 
 ![MainActivity](https://github.com/davvnovvo/First/blob/master/gradle/images/MainActivity.png)
 
-# This is a AlertDialogBuilder
+# This is an AlertDialog
 
 ![AlertDialog](https://github.com/davvnovvo/First/blob/master/gradle/images/AlertDialog.png)
 
