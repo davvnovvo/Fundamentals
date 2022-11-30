@@ -50,15 +50,6 @@ public class LoginActivity extends AppCompatActivity {
                 .centerCrop()
                 .into(mFondo);
 
-        /*Glide.with(this)
-                .load("https://i.pinimg.com/736x/4c/30/34/4c3034861b40f0fb4c0b3b5fbefe77e9.jpg")
-                .load(R.drawable.girl)
-                .transition(DrawableTransitionOptions.withCrossFade(100))
-                .centerCrop()
-                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.orange)))
-                .circleCrop()
-                .into(mFondo);*/
-
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
