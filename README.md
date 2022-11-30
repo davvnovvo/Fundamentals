@@ -38,7 +38,7 @@
 
 [ActivitySignup](https://github.com/davvnovvo/First/blob/master/app/src/main/res/layout/activity_signup.xml)
 
-> Set red color when passwords aren't equals in ActivitySignup
+`Set red color when passwords aren't equals in ActivitySignup`
 ![Passwords](https://github.com/davvnovvo/First/blob/master/gradle/images/passwords.png)
 
 [ActivitySplash](https://github.com/davvnovvo/First/blob/master/app/src/main/res/layout/activity_splash.xml)
