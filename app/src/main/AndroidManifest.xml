@@ -22,7 +22,7 @@
             android:name="com.dnovo.first.Splash"
             android:exported="true"
             android:noHistory="true"
-            android:theme="@style/MyTheme.NoActionBar">
+            android:theme="@style/MyTheme.NoActionBar2">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

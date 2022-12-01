@@ -1,9 +1,7 @@
 package com.dnovo.first;
 
-import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -37,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
         mFondo = findViewById(R.id.fondo);
 
         Glide.with(this)
-                .load("https://img.freepik.com/fotos-premium/fondo-mexicano-copyspace_1101-1416.jpg?w=2000")
+                .load("https://w0.peakpx.com/wallpaper/470/824/HD-wallpaper-yellow-ocean-aesthetic.jpg")
                 .transition(DrawableTransitionOptions.withCrossFade(100))
                 .centerCrop()
                 .into(mFondo);
