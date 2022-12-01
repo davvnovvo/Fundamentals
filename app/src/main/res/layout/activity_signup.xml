@@ -41,7 +41,7 @@
             android:id="@+id/edituser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username"
             android:imeOptions="actionGo"
             android:inputType="text"></EditText>
 
@@ -62,7 +62,7 @@
             android:id="@+id/editemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:imeOptions="actionGo"
             android:inputType="textEmailAddress"></EditText>
 
@@ -84,7 +84,7 @@
             android:id="@+id/editpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:imeOptions="actionGo"
             android:inputType="textPassword"></EditText>
 
@@ -106,7 +106,7 @@
             android:id="@+id/editpassword2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm password"
+            android:hint="@string/password2"
             android:imeOptions="actionGo"
             android:inputType="textPassword"></EditText>
 
@@ -117,7 +117,7 @@
         style="@style/login_button"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/buttonselector"
-        android:text="LOGIN"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@id/guideL2"
         app:layout_constraintStart_toStartOf="@id/guideL"
         app:layout_constraintTop_toBottomOf="@id/tilpassword2" />
@@ -128,7 +128,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/buttonselector"
-        android:text="CLEAR"
+        android:text="@string/clear"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintStart_toStartOf="@id/guideR2"
         app:layout_constraintTop_toTopOf="@id/login" />

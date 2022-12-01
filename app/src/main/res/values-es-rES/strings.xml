@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">First</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">INICIO</string>
+    <string name="clear">LIMPIAR</string>
+    <string name="signup">¿No tienes una cuenta? Regístrate aquí</string>
+    <string name="email">Email</string>
+    <string name="password2">Confirmar contraseña</string>
+</resources>

@@ -35,7 +35,7 @@
             android:id="@+id/edituser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username"
             android:inputType="text"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -55,7 +55,7 @@
             android:id="@+id/editpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -65,7 +65,7 @@
         style="@style/login_button"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/buttonselector"
-        android:text="LOGIN"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@id/guideL2"
         app:layout_constraintStart_toStartOf="@id/guideL"
         app:layout_constraintTop_toBottomOf="@id/tilpassword" />
@@ -76,7 +76,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/buttonselector"
-        android:text="CLEAR"
+        android:text="@string/clear"
         app:layout_constraintEnd_toEndOf="@id/guideR"
         app:layout_constraintStart_toStartOf="@id/guideR2"
         app:layout_constraintTop_toTopOf="@id/login" />
@@ -86,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Have you got an account? Sign up here"
+        android:text="@string/signup"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
