@@ -15,6 +15,13 @@
         android:theme="@style/Theme.Fundamentals"
         tools:targetApi="31">
         <activity
+            android:name=".MainBab"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.dnovo.first.MainActivity"
             android:exported="false"
             android:parentActivityName="com.dnovo.first.LoginActivity" />
