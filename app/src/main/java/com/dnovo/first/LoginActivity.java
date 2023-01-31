@@ -60,6 +60,11 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(i);
                     limpiar();
                 } else {
+                    /*if (edituser.getText().toString().equals("")) {
+                        edituser.setError("DEBE COMPLETAR LOS CAMPOS OBLIGATORIOS");
+                    } else if (editpassword.getText().toString().equals("")) {
+                        editpassword.setError("DEBE COMPLETAR LOS CAMPOS OBLIGATORIOS");
+                    }*/
                     Toast.makeText(LoginActivity.this, "DEBE COMPLETAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
                 }
 
